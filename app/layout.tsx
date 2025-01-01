@@ -7,8 +7,8 @@ import { ThemeProvider } from "./provider";
 const raleway = Raleway({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Adrian's Portfolio",
-  description: "Modern & Minimal JS Mastery Portfolio",
+  title: "Codessa",
+  description: "A Chicago Web Design and Development Firm specializing in providing Custom Websites and Stress-Free Support to ensure you can focus on what matters most-your business",
 };
 
 export default function RootLayout({

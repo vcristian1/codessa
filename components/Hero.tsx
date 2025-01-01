@@ -9,7 +9,7 @@ import codessa from "../public/codessa.svg"
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-26">
+    <div className="pb-20 pt-24 md:pt-32">
       {/**
        *  UI: Spotlights
        *  Link: https://ui.aceternity.com/components/spotlight
@@ -45,8 +45,6 @@ const Hero = () => {
 
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <Image src={codessa} alt="Codessa Logo" width={300} height={50}>
-          </Image>
           <p className="uppercase tracking-widest text-xs text-center max-w-80">
             Creative Web Magic ✨
           </p>
