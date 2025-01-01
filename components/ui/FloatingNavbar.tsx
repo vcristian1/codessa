@@ -1,14 +1,13 @@
 "use client";
-import React, { useState, JSX } from "react";
-import {
-  motion,
-  AnimatePresence,
-} from "framer-motion";
+import React, { useState, useEffect, JSX } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import codessa from "../../public/codessa.svg";
-import { GiHamburgerMenu, GiCrossMark } from "react-icons/gi"; // Import hamburger and close icons
+import { IoMdClose } from "react-icons/io";
+import { FaAlignRight } from "react-icons/fa";
+
 
 export const FloatingNav = ({
   navItems,
@@ -22,6 +21,25 @@ export const FloatingNav = ({
   className?: string;
 }) => {
   const [menuOpen, setMenuOpen] = useState(false); // Track if the mobile menu is open
+  const [scrolled, setScrolled] = useState(false); // Track if user has scrolled
+
+  // Track the scroll position to change the background of the mobile navbar
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolled(true); // Set scrolled to true when the user scrolls down
+      } else {
+        setScrolled(false); // Reset when the user scrolls back to the top
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up event listener
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <div className="relative">
@@ -40,7 +58,7 @@ export const FloatingNav = ({
             duration: 0.2,
           }}
           className={cn(
-            "hidden md:flex max-w-fit overflow-x-auto md:max-w-fit md:min-w-[70vw] lg:min-w-fit fixed z-[5000] top-0 inset-x-0 mx-auto px-10 py-4 rounded-lg border border-black/.1 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] items-center justify-center space-x-4",
+            "hidden md:flex overflow-x-auto md:max-w-fit md:min-w-[70vw] lg:min-w-fit fixed z-[5000] top-5 inset-x-0 mx-auto px-10 py-4 rounded-lg border border-black/.1 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] items-center justify-center space-x-4",
             className
           )}
           style={{
@@ -73,22 +91,28 @@ export const FloatingNav = ({
       </AnimatePresence>
 
       {/* Hamburger Icon (Visible on mobile) */}
-      <div className="flex justify-between items-center md:hidden fixed top-4 left-4 right-4 z-[5001] px-4">
-        {/* Logo on the far left */}
-        <Image className="z-6" src={codessa} alt="logo" height={25} width={90} />
+      {/* Hamburger Icon (Visible on mobile) */}
+    <div
+      className={cn(
+        "md:hidden fixed top-0 left-0 right-0 z-[5001] w-full h-[72px] flex justify-between items-center px-8 transition duration-500",
+        scrolled ? "backdrop-blur-2xl" : "bg-transparent"
+      )}
+    >
+      {/* Logo on the far left */}
+      <Image className="z-6" src={codessa} alt="logo" height={25} width={90} />
 
-        {/* Hamburger icon on the far right */}
-        <button
-          onClick={() => setMenuOpen(!menuOpen)} // Toggle menu visibility on click
-          className="p-3 text-white rounded-full"
-        >
-          {menuOpen ? (
-            <GiCrossMark size={24} /> // Show close icon when menu is open
-          ) : (
-            <GiHamburgerMenu size={24} /> // Show hamburger icon when menu is closed
-          )}
-        </button>
-      </div>
+      {/* Hamburger icon on the far right */}
+      <button
+        onClick={() => setMenuOpen(!menuOpen)} // Toggle menu visibility on click
+        className="p-3 text-white rounded-full"
+      >
+        {menuOpen ? (
+          <IoMdClose size={24} /> // Show close icon when menu is open
+        ) : (
+          <FaAlignRight size={20} /> // Show hamburger icon when menu is closed
+        )}
+      </button>
+    </div>
 
       {/* Mobile Navbar (Visible when hamburger is clicked) */}
       <AnimatePresence>

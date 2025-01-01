@@ -9,7 +9,7 @@ import codessa from "../public/codessa.svg"
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-24 md:pt-32">
+    <div className="pb-20 pt-20 md:pt-32">
       {/**
        *  UI: Spotlights
        *  Link: https://ui.aceternity.com/components/spotlight
@@ -59,8 +59,8 @@ const Hero = () => {
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-          Chicago-based Web Design & Development Firm, offering custom websites and stress-free management so you can focus on what matters most—your business.          </p>
+          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-1xl">
+          Chicago-based Web Design & Development Firm, offering custom websites and stress-free management so you can focus on what matters most—your business.</p>
 
           <a href="#about">
             <MagicButton
