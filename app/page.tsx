@@ -1,7 +1,7 @@
 "use client";
 
 import { navItems } from "@/data";
-
+import React from "react";
 import Hero from "@/components/Hero";
 // import Grid from "@/components/Grid";
 // import Footer from "@/components/Footer";
