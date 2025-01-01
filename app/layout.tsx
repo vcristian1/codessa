@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-
+import { Raleway } from "next/font/google";
+import React from "react";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
 
-const inter = Inter({ subsets: ["latin"] });
+const raleway = Raleway({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Adrian's Portfolio",
@@ -21,7 +21,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/jsm-logo.png" sizes="any" />
       </head>
-      <body className={inter.className}>
+      <body className={raleway.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
