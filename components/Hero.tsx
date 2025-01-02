@@ -45,9 +45,8 @@ const Hero = () => {
 
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <p className="uppercase tracking-widest text-xs text-center max-w-80">
-            Creative Web Magic ✨
-          </p>
+          <Image src={codessa} height={20} width={100} alt="logo" className="tracking-widest text-xs text-center max-w-80">
+          </Image>
 
           {/**
            *  Link: https://ui.aceternity.com/components/text-generate-effect
@@ -60,7 +59,7 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-1xl">
-          Chicago-based Web Design & Development Firm, offering custom websites and stress-free management so you can focus on what matters most—your business.</p>
+          Chicago-based web design and development firm creating custom websites that take the hassle out of your online presence. You focus on your business—let us handle your website with care.</p>
 
           <a href="#about">
             <MagicButton
