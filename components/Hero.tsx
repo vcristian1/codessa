@@ -7,6 +7,9 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import Image from "next/image"
 import codessa from "../public/codessa.svg"
 import codessa2 from "../public/codessa2.svg"
+import SponsorFortune from "../public/SponsorFortune.png";
+import SponsorForbes from "../public/SponsorForbes.png";
+
 
 
 const Hero = () => {
@@ -72,6 +75,15 @@ const Hero = () => {
           </a>
         </div>
       </div>
+      <div className="h-[150px] w-full bg-primary-100 py-10">
+                <div className="mx-auto w-5/6">
+                    <div className="flex w-full items-center justify-between gap-8">
+                        <Image src={SponsorForbes} height={80} width={80} alt="sponsor-forbes" />
+                        <Image src={SponsorFortune} height={80} width={80} alt="sponsor-fortune" />
+                        <Image src={SponsorForbes} height={80} width={80} alt="sponsor-forbes" />
+                    </div>
+                </div>
+            </div>
     </div>
   );
 };
