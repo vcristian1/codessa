@@ -13,6 +13,7 @@ import Image from "next/image";
 import codessa from "../../public/codessa.svg";
 import { IoMdClose } from "react-icons/io";
 import { FaAlignRight } from "react-icons/fa";
+import DarkModeToggle from "@/components/ui/DarkModeToggle"
 
 export const FloatingNav = ({
   navItems,
@@ -68,12 +69,12 @@ export const FloatingNav = ({
             exit={{ y: -100, opacity: 0 }}
             transition={{ duration: 0.3 }}
             className={cn(
-              "hidden lg:flex overflow-x-auto md:max-w-fit md:min-w-[70vw] lg:min-w-fit fixed z-[5000] top-10 inset-x-0 mx-auto px-10 py-4 rounded-lg border border-black/.1 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] items-center justify-center space-x-4",
+              "dark:bg-[rgba(0, 0, 0, .4)] bg-black-100 hidden lg:flex overflow-x-auto md:max-w-fit md:min-w-[70vw] lg:min-w-fit fixed z-[5000] top-10 inset-x-0 mx-auto px-10 py-4 rounded-lg border border-black/.1 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] items-center justify-center space-x-4",
               className
             )}
             style={{
               backdropFilter: "blur(80px) saturate(180%)",
-              backgroundColor: "rgba(0, 0, 0, .4)",
+              backgroundColor: "",
               borderRadius: "12px",
               border: "1px solid rgba(255, 255, 255, 0.125)",
             }}
@@ -84,7 +85,7 @@ export const FloatingNav = ({
                 key={`link-${idx}`}
                 href={navItem.link}
                 className={cn(
-                  "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
+                  "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-50 dark:hover:text-neutral-300 hover:text-neutral-500"
                 )}
               >
                 <span className="block sm:hidden">{navItem.icon}</span>
@@ -102,6 +103,7 @@ export const FloatingNav = ({
                 Schedule your Consultation
               </span>
             </button>
+            <DarkModeToggle />
           </motion.div>
         )}
       </AnimatePresence>
@@ -118,7 +120,7 @@ export const FloatingNav = ({
           onClick={() => setMenuOpen(!menuOpen)}
           className="p-3 text-white rounded-full"
         >
-          {menuOpen ? <IoMdClose size={24} /> : <FaAlignRight size={20} />}
+          {menuOpen ? <IoMdClose className="dark:text-white text-black-100" size={24} /> : <FaAlignRight className="dark:text-white text-black-100" size={20} />}
         </button>
       </div>
 
@@ -130,17 +132,17 @@ export const FloatingNav = ({
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.8 }}
             transition={{ duration: 0.3 }}
-            className="fixed top-0 left-0 right-0 bottom-0 z-[5000] flex justify-center items-center backdrop-blur-lg bg-black/50"
+            className="fixed top-0 left-0 right-0 bottom-0 z-[5000] flex justify-center items-center backdrop-blur-lg"
           >
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.8 }}
               transition={{ duration: 0.3 }}
-              className="w-[80vw] md:w-[400px] p-6 rounded-lg shadow-lg space-y-6"
+              className="bg-black-100 text-white w-[80vw] md:w-[400px] p-6 rounded-lg shadow-lg space-y-6"
               style={{
                 backdropFilter: "blur(80px) saturate(180%)",
-                backgroundColor: "rgba(0, 0, 0, .4)",
+                backgroundColor: "",
                 borderRadius: "12px",
                 border: "1px solid rgba(255, 255, 255, 0.1)",
               }}
@@ -154,15 +156,19 @@ export const FloatingNav = ({
                   {navItem.name}
                 </Link>
               ))}
-              <button className="relative inline-flex h-10 w-auto overflow-hidden rounded-lg p-[1px] focus:outline-none">
-                <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-                <span
-                  className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg
-                    bg-slate-950 px-5 py-2 text-sm font-medium text-white backdrop-blur-3xl"
-                >
-                  Schedule your Consultation
-                </span>
-              </button>
+              <div className="flex-col">
+                <button className="mb-2 relative inline-flex h-10 w-auto overflow-hidden rounded-lg p-[1px] focus:outline-none">
+                  <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+                  <span
+                    className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg
+                      bg-slate-950 px-5 py-2 text-sm font-medium text-white backdrop-blur-3xl"
+                  >
+                    Schedule your Consultation
+                  </span>
+                </button>
+                <DarkModeToggle />
+              </div>
+              
             </motion.div>
           </motion.div>
         )}
