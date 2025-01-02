@@ -59,11 +59,11 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-1xl">
-          Chicago-based web design and development firm creating custom websites that take the hassle out of your online presence. You focus on your business—let us handle your website with care.</p>
+          Chicago-based Web Design and Development Firm creating custom websites that take the hassle out of your online presence. You focus on your business—let us handle your website with care.</p>
 
           <a href="#about">
             <MagicButton
-              title="See our work"
+              title="View our Portfolio"
               icon={<FaLocationArrow />}
               position="right"
             />
