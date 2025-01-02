@@ -62,8 +62,8 @@ export const FloatingNav = ({
             className
           )}
           style={{
-            backdropFilter: "blur(16px) saturate(180%)",
-            backgroundColor: "rgba(17, 25, 40, 0.75)",
+            backdropFilter: "blur(80px) saturate(180%)",
+            backgroundColor: "rgba(0, 0, 0, .4)",
             borderRadius: "12px",
             border: "1px solid rgba(255, 255, 255, 0.125)",
           }}
@@ -84,7 +84,7 @@ export const FloatingNav = ({
             </Link>
           ))}
           <button className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full">
-            <span>Start with a Consultation</span>
+            <span>Talk to our Experts</span>
             <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent  h-px" />
           </button>
         </motion.div>
@@ -131,8 +131,8 @@ export const FloatingNav = ({
               transition={{ duration: 0.3 }}
               className="w-[80vw] md:w-[400px] p-6 rounded-lg shadow-lg space-y-6"
               style={{
-                backdropFilter: "blur(16px) saturate(180%)",
-                backgroundColor: "rgba(17, 25, 40, 0.75)",
+                backdropFilter: "blur(80px) saturate(180%)",
+                backgroundColor: "rgba(0, 0, 0, .4)",
                 borderRadius: "12px",
                 border: "1px solid rgba(255, 255, 255, 0.125)",
               }}
@@ -147,7 +147,7 @@ export const FloatingNav = ({
                 </Link>
               ))}
               <button className="w-full text-center text-sm font-medium text-black bg-white py-2 rounded-full">
-                Start with a Consultation
+                Talk to our Experts
               </button>
             </motion.div>
           </motion.div>
