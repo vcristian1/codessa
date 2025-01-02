@@ -7,14 +7,10 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import Image from "next/image"
 import codessa from "../public/codessa.svg"
 import codessa2 from "../public/codessa2.svg"
-import SponsorFortune from "../public/SponsorFortune.png";
-import SponsorForbes from "../public/SponsorForbes.png";
-
-
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-20 md:pt-32">
+    <div className="pb-20 xxs:pt-24 xs:pt-24 md:pt-32">
       {/**
        *  UI: Spotlights
        *  Link: https://ui.aceternity.com/components/spotlight
@@ -48,7 +44,7 @@ const Hero = () => {
         />
       </div>
 
-      <div className="flex justify-center relative my-20 z-10">
+      <div className="flex justify-center relative xxs:my-20 xs:my-16 xr:my-24 itp:my-24 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <Image src={codessa2} height={20} width={100} alt="logo" className="tracking-widest text-xs text-center max-w-80">
           </Image>
@@ -60,10 +56,10 @@ const Hero = () => {
            */}
           <TextGenerateEffect
             words="Stress-Free Websites for Small Businesses."
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
+            className="text-center xxs:text-[42px] xs:text-[38px] itp:text-[44px] xr:text-[48px] md:text-5xl lg:text-6xl"
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-1xl">
+          <p className="text-center md:tracking-wider mb-4 xxs:text-lg xs:text-sm itp:text-lg xr:text-lg text-sm md:text-lg lg:text-1xl">
           Chicago Web Design and Development Firm creating custom websites that take the hassle out of your online presence. You focus on your business—let us handle your website with care.</p>
 
           <a href="#about">
@@ -75,15 +71,6 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      <div className="h-[150px] w-full bg-primary-100 py-10">
-                <div className="mx-auto w-5/6">
-                    <div className="flex w-full items-center justify-between gap-8">
-                        <Image src={SponsorForbes} height={80} width={80} alt="sponsor-forbes" />
-                        <Image src={SponsorFortune} height={80} width={80} alt="sponsor-fortune" />
-                        <Image src={SponsorForbes} height={80} width={80} alt="sponsor-forbes" />
-                    </div>
-                </div>
-            </div>
     </div>
   );
 };

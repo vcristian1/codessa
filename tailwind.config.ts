@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 const svgToDataUri = require("mini-svg-data-uri");
@@ -23,7 +22,12 @@ const config = {
       center: true,
       padding: "2rem",
       screens: {
-        "2xl": "1400px",
+        xs: "375px",
+        sm: "640px",
+        md: "768px",
+        lg: "1400px",
+        xl: "2240px",
+        "2xl": "3200px",
       },
     },
     extend: {
@@ -161,6 +165,17 @@ const config = {
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
+    },
+    screens: {
+      xxs: "344px",
+      xs: "360px",
+      itp: "390px",
+      xr:  "414px",
+      sm: "640px",
+      md: "768px",
+      lg: "1400px",
+      xl: "2240px",
+      "2xl": "3200px",
     },
   },
   plugins: [
