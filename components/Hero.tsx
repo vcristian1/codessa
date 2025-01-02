@@ -23,7 +23,7 @@ const Hero = () => {
         /> */}
         <Spotlight
           className="h-[80vh] w-[50vw] top-10 left-full"
-          fill="navy"
+          fill="pink"
         />
         <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="indigo" />
       </div>
@@ -61,7 +61,7 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-1xl">
-          Chicago-based Web Design and Development Firm creating custom websites that take the hassle out of your online presence. You focus on your business—let us handle your website with care.</p>
+          Chicago Web Design and Development Firm creating custom websites that take the hassle out of your online presence. You focus on your business—let us handle your website with care.</p>
 
           <a href="#about">
             <MagicButton
