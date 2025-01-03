@@ -70,7 +70,7 @@ export const FloatingNav = ({
             exit={{ y: -100, opacity: 0 }}
             transition={{ duration: .4 }}
             className={cn(
-              "dark:bg-[rgba(0, 0, 0, .4)] bg-black-100 hidden lg:flex overflow-x-auto md:max-w-fit md:min-w-[70vw] lg:min-w-fit fixed z-[100] top-10 lg:top-0 inset-x-0 mx-auto px-10 py-4 rounded-lg border border-black/.1 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] dark: items-center justify-center space-x-4",
+              "dark:bg-[rgba(0, 0, 0, .4)] bg-black-100 hidden lt:flex overflow-x-auto md:max-w-fit md:min-w-[70vw] lg:min-w-fit fixed z-[100] top-10 lt:top-0 inset-x-0 mx-auto px-10 py-4 rounded-lg border border-black/.1 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] dark: items-center justify-center space-x-4",
               
             )}
             style={{
@@ -112,7 +112,7 @@ export const FloatingNav = ({
       {/* Mobile Navbar */}
       <div
         className={cn(
-          "lg:hidden fixed top-0 left-0 right-0 z-[5001] w-full h-[72px] flex justify-between items-center px-8 transition duration-500",
+          "lt:hidden fixed top-0 left-0 right-0 z-[5001] w-full h-[72px] flex justify-between items-center px-8 transition duration-500",
           scrolled ? "bg-slate-200 dark:bg-black-100" : "bg-transparent"
         )}
       >

@@ -176,6 +176,8 @@ const config = {
       xr:  "414px",
       sm: "640px",
       md: "768px",
+      tb: "1080px",
+      lt: "1280px",
       lg: "1400px",
       xl: "2240px",
       "2xl": "3200px",

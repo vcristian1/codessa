@@ -83,7 +83,7 @@ const RecentProjects = () => {
                     bg-slate-950 px-4 lg:px-1 text-sm font-medium text-white backdrop-blur-3xl gap-2 
                     ${tab.active === "health" ? "dark:bg-slate-700 bg-slate-700 from-purple-500 to-indigo-500" : "bg-black-100 dark:bg-black-100"} `}
                 >
-                  Peace PLLC
+                  P.P.H. PLLC
                 </span>
               </button>
 
@@ -124,10 +124,10 @@ const RecentProjects = () => {
                 animate={{ y: 0, opacity: 1 }}
                 exit={{ y: -100, opacity: 0 }}
                 transition={{ delay: 0, duration: 0.9 }}
-                className="lg:flex lg:gap-x-4"
+                className="tb:flex tb:gap-x-6 lg:gap-x-4"
               >
-                <Image src={tabImage1} height={500} width={500} alt="tab image" className="" />
-                <div className="lg:flex-col xs:mt-10">
+                <Image src={tabImage1} height={500} width={500} alt="tab image" className="xxs:items-center" />
+                <div className="tb:flex-col xs:mt-10">
                   <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
