@@ -113,7 +113,7 @@ export const FloatingNav = ({
       <div
         className={cn(
           "lg:hidden fixed top-0 left-0 right-0 z-[5001] w-full h-[72px] flex justify-between items-center px-8 transition duration-500",
-          scrolled ? "bg-slate-100 dark:bg-black-100" : "bg-transparent"
+          scrolled ? "bg-slate-200 dark:bg-black-100" : "bg-transparent"
         )}
       >
         <Image className="hidden dark:block z-6" src={codessa} alt="logo" height={25} width={90} />
