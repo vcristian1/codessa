@@ -17,11 +17,11 @@ const Home = () => {
   return (
     <main className="relative dark:bg-black-100 bg-slate-200 flex justify-center items-center flex-col overflow-clip mx-auto sm:px-10 px-5">
       <AnimatedCursor
-      innerSize={8}
-      outerSize={8}
-      color='193, 11, 111'
+      innerSize={14}
+      outerSize={14}
+      color='94, 23, 245'
       outerAlpha={0.2}
-      innerScale={0.7}
+      innerScale={0.4}
       outerScale={5}
       clickables={[
         'a',

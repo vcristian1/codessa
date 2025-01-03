@@ -59,7 +59,7 @@ const RecentProjects = () => {
               >
                 <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
                 <span
-                  className={`inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg
+                  className={`inline-flex h-full w-full items-center justify-center rounded-lg
                     bg-slate-950 px-4 lg:px-1 text-sm font-medium text-white backdrop-blur-3xl gap-2 
                     ${tab.active === "health" ? "dark:bg-slate-700 bg-slate-700 from-purple-500 to-indigo-500" : "bg-black-100 dark:bg-black-100"} `}
                 >
@@ -73,7 +73,7 @@ const RecentProjects = () => {
               >
                 <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
                 <span
-                  className={`inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg
+                  className={`inline-flex h-full w-full items-center justify-center rounded-lg
                     bg-slate-950 px-2 text-sm font-medium text-white backdrop-blur-3xl gap-2
                     ${tab.active === "colibri" ? "dark:bg-slate-700 bg-slate-700 from-purple-500 to-indigo-500" : "bg-black-100 dark:bg-black-100"} `}
                 >
@@ -87,7 +87,7 @@ const RecentProjects = () => {
               >
                 <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
                 <span
-                  className={`inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg
+                  className={`inline-flex h-full w-full items-center justify-center rounded-lg
                     bg-slate-950 px-2 text-sm font-med text-white backdrop-blur-3xl gap-2
                     ${tab.active === "wedding" ? "dark:bg-slate-700 bg-slate-700 from-purple-500 to-indigo-500" : "bg-black-100 dark:bg-black-100"} `}
                 >
