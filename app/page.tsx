@@ -14,7 +14,6 @@ import Sponsors from "@/components/ui/Sponsors"
 import AnimatedCursor from "react-animated-cursor"
 
 const Home = () => {
-  const isMobile = window.innerWidth <= 768;
 
   return (
     <main className="relative dark:bg-black-100 bg-slate-200 flex justify-center items-center flex-col overflow-clip mx-auto sm:px-10 px-5">
