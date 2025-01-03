@@ -42,7 +42,7 @@ const RecentProjects = () => {
       <h1 className="heading">
         Where{" "}
         <span className="dark:text-[indigo-500] text-[#5e17eb]">
-          Solutions
+          Web Solutions
         </span>{" "}Meet
         <span className="dark:text-[indigo-500] text-[#5e17eb]">
           {" "}Success
