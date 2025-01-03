@@ -9,6 +9,8 @@ import dotPattern from "../public/dot-pattern.svg";
 import { keyframes } from "@emotion/react";
 import BlockTitle from "./ui/BlockTitle";
 import tabImage1 from "../public/project1.svg";
+import tabImage2 from "../public/project2.svg";
+import tabImage3 from "../public/project3.svg";
 import Image from "next/image";
 import {
   motion,
@@ -75,7 +77,7 @@ const RecentProjects = () => {
                     bg-slate-950 px-2 text-sm font-medium text-white backdrop-blur-3xl gap-2
                     ${tab.active === "colibri" ? "dark:bg-slate-700 bg-slate-700 from-purple-500 to-indigo-500" : "bg-black-100 dark:bg-black-100"} `}
                 >
-                  Colibri Inc
+                  Colibri C.S.
                 </span>
               </button>
 
@@ -153,7 +155,7 @@ const RecentProjects = () => {
               transition={{ delay: 0, duration: 0.9 }}
               className="lg:flex lg:gap-x-4"
             >
-              <Image src={tabImage1} height={500} width={500} alt="tab image" className="" />
+              <Image src={tabImage2} height={500} width={500} alt="tab image" className="" />
               <div className="lg:flex-col xs:mt-10">
                 <motion.div
                   initial={{ opacity: 0 }}
@@ -162,7 +164,7 @@ const RecentProjects = () => {
                 >
                   <Heading className="text-2xl font-semibold text-black dark:text-white">The Challenge</Heading>
                   <Text className="text-gray-800 dark:text-gray-300 xxs:text-lg xs:text-sm itp:text-lg xr:text-lg text-sm md:text-lg lg:text-1xl">
-                    Peace Pelvic Health PLLC needed an accessible website to highlight their expertise, treatments, and zen-inspired brand. It was essential for the site to be accessible while maximizing visibility through strong SEO.
+                  Colibri Construction Services needed a custom website to expand their strong word-of-mouth business online. They required flexibility for future technology integrations and a focus on SEO to attract potential clients searching for construction services in Chicago.
                   </Text>
                 </motion.div>
                 <div className="xs:mt-10">
@@ -173,7 +175,7 @@ const RecentProjects = () => {
                   >
                     <Heading className="text-2xl font-semibold text-black dark:text-white">The Results</Heading>
                     <Text className="xxs:text-lg xs:text-sm itp:text-lg xr:text-lg text-sm md:text-lg lg:text-1xl text-gray-800 dark:text-gray-300">
-                      Peace Pelvic Health PLLC ranks #1 on search engines for their business name. Achieved a 70% increase in website visits within three months. Inquiries and bookings rose by 33%, driving new client acquisition. Fully compliant with WCAG standards, ensuring inclusivity.
+                    Colibri now has a custom website that ranks well for construction services in Chicago, driving traffic and increasing visibility. The user-friendly design allows for easy content updates and management of inquiries, converting visitors into leads.
                     </Text>
                   </motion.div>
                 </div>
@@ -186,7 +188,7 @@ const RecentProjects = () => {
                 >
                   <Heading className="text-2xl font-semibold text-black dark:text-white">The Solution</Heading>
                   <Text className="xxs:text-lg xs:text-sm itp:text-lg xr:text-lg text-sm md:text-lg lg:text-1xl text-gray-800 dark:text-gray-300">
-                    We designed and launched an accessible, SEO-optimized website tailored to Peace Pelvic Health&apos;s serene brand identity. The calming design, user-friendly layout, and compliance with accessibility standards showcase their services and location.
+                  We built a scalable, SEO-optimized website that reflects Colibri's brand. The design is flexible for future tech integrations, with integrated testimonials and an inquiry form to help grow their online presence and generate leads
                   </Text>
                 </motion.div>
               </div>
@@ -202,7 +204,7 @@ const RecentProjects = () => {
                 transition={{ delay: 0, duration: 0.9 }}
                 className="lg:flex lg:gap-x-4"
               >
-                <Image src={tabImage1} height={500} width={500} alt="tab image" className="" />
+                <Image src={tabImage3} height={500} width={500} alt="tab image" className="" />
                 <div className="lg:flex-col xs:mt-10">
                   <motion.div
                     initial={{ opacity: 0 }}
@@ -211,7 +213,7 @@ const RecentProjects = () => {
                   >
                     <Heading className="text-2xl font-semibold text-black dark:text-white">The Challenge</Heading>
                     <Text className="text-gray-800 dark:text-gray-300 xxs:text-lg xs:text-sm itp:text-lg xr:text-lg text-sm md:text-lg lg:text-1xl">
-                      Peace Pelvic Health PLLC needed an accessible website to highlight their expertise, treatments, and zen-inspired brand. It was essential for the site to be accessible while maximizing visibility through strong SEO.
+                    CV needed a wedding website to provide guests with essential event details, including ceremony time, location, and registry information. The site also needed a barn-style design to reflect the wedding venue and a personal touch showcasing their love story.
                     </Text>
                   </motion.div>
                   <div className="xs:mt-10">
@@ -222,7 +224,7 @@ const RecentProjects = () => {
                     >
                       <Heading className="text-2xl font-semibold text-black dark:text-white">The Results</Heading>
                       <Text className="xxs:text-lg xs:text-sm itp:text-lg xr:text-lg text-sm md:text-lg lg:text-1xl text-gray-800 dark:text-gray-300">
-                        Peace Pelvic Health PLLC ranks #1 on search engines for their business name. Achieved a 70% increase in website visits within three months. Inquiries and bookings rose by 33%, driving new client acquisition. Fully compliant with WCAG standards, ensuring inclusivity.
+                      CV's guests can easily access all event information, reducing confusion and ensuring a smooth experience. The personal story section added a heartfelt touch, while the registry integration simplified gift-giving.
                       </Text>
                     </motion.div>
                   </div>
@@ -235,7 +237,7 @@ const RecentProjects = () => {
                   >
                     <Heading className="text-2xl font-semibold text-black dark:text-white">The Solution</Heading>
                     <Text className="xxs:text-lg xs:text-sm itp:text-lg xr:text-lg text-sm md:text-lg lg:text-1xl text-gray-800 dark:text-gray-300">
-                      We designed and launched an accessible, SEO-optimized website tailored to Peace Pelvic Health&apos;s serene brand identity. The calming design, user-friendly layout, and compliance with accessibility standards showcase their services and location.
+                    We created a custom, barn-inspired website with clear event details, a dedicated registry section, and a personal story. The design is user-friendly and tailored to the couple's unique style, making it the go-to resource for their wedding day.
                     </Text>
                   </motion.div>
                 </div>
