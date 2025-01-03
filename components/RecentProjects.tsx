@@ -188,7 +188,7 @@ const RecentProjects = () => {
                 >
                   <Heading className="text-2xl font-semibold text-black dark:text-white">The Solution</Heading>
                   <Text className="xxs:text-lg xs:text-sm itp:text-lg xr:text-lg text-sm md:text-lg lg:text-1xl text-gray-800 dark:text-gray-300">
-                  We built a scalable, SEO-optimized website that reflects Colibri's brand. The design is flexible for future tech integrations, with integrated testimonials and an inquiry form to help grow their online presence and generate leads
+                  We built a scalable, SEO-optimized website that reflects Colibri&apos;s brand. The design is flexible for future tech integrations, with integrated testimonials and an inquiry form to help grow their online presence and generate leads
                   </Text>
                 </motion.div>
               </div>
@@ -224,7 +224,7 @@ const RecentProjects = () => {
                     >
                       <Heading className="text-2xl font-semibold text-black dark:text-white">The Results</Heading>
                       <Text className="xxs:text-lg xs:text-sm itp:text-lg xr:text-lg text-sm md:text-lg lg:text-1xl text-gray-800 dark:text-gray-300">
-                      CV's guests can easily access all event information, reducing confusion and ensuring a smooth experience. The personal story section added a heartfelt touch, while the registry integration simplified gift-giving.
+                      CV&apos;s guests can easily access all event information, reducing confusion and ensuring a smooth experience. The personal story section added a heartfelt touch, while the registry integration simplified gift-giving.
                       </Text>
                     </motion.div>
                   </div>
@@ -237,7 +237,7 @@ const RecentProjects = () => {
                   >
                     <Heading className="text-2xl font-semibold text-black dark:text-white">The Solution</Heading>
                     <Text className="xxs:text-lg xs:text-sm itp:text-lg xr:text-lg text-sm md:text-lg lg:text-1xl text-gray-800 dark:text-gray-300">
-                    We created a custom, barn-inspired website with clear event details, a dedicated registry section, and a personal story. The design is user-friendly and tailored to the couple's unique style, making it the go-to resource for their wedding day.
+                    We created a custom, barn-inspired website with clear event details, a dedicated registry section, and a personal story. The design is user-friendly and tailored to the couple&apos;s unique style, making it the go-to resource for their wedding day.
                     </Text>
                   </motion.div>
                 </div>
