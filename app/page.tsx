@@ -4,7 +4,7 @@ import { navItems } from "@/data";
 import React from "react";
 import Hero from "@/components/Hero";
 // import Grid from "@/components/Grid";
-// import Footer from "@/components/Footer";
+import Footer from "@/components/Footer";
 // import Clients from "@/components/Clients";
 // import Approach from "@/components/Approach";
 // import Experience from "@/components/Experience";
@@ -23,7 +23,8 @@ const Home = () => {
         <Clients />
         <Experience />
         <Approach />
-        <Footer /> */}
+        */}
+        <Footer /> 
       </div>
     </main>
   );
