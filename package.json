@@ -10,6 +10,8 @@
     "deploy": "vercel --prod"
   },
   "dependencies": {
+    "@emotion/core": "^11.0.0",
+    "@emotion/react": "^11.14.0",
     "@react-three/drei": "^9.120.5",
     "@react-three/fiber": "^8.17.10",
     "@sentry/nextjs": "^8.47.0",
@@ -28,6 +30,7 @@
     "react-lottie": "^1.2.10",
     "tailwind-merge": "^2.6.0",
     "tailwindcss-animate": "^1.0.7",
+    "theme-ui": "^0.17.1",
     "three": "^0.172.0",
     "three-globe": "^2.39.1",
     "vercel": "^39.2.2"
