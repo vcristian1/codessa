@@ -9,14 +9,14 @@ import Image from "next/image"
 
 const Sponsors = () => {
     return (
-        <div className="bg-slate-100 dark:bg-black-100">
+        <div id="clients" className="bg-slate-100 dark:bg-black-100">
             <div className="flex justify-center xs:gap-[1px] lg:gap-6">
-                <Image src={PeacePelvicHealth} className="hidden dark:block" height={100} width={170} alt="client-peace-pelvic-health" />
-                <Image src={PeacePelvicHealthLight} className="block dark:hidden" height={100} width={170} alt="client-peace-pelvic-health" />
-                <Image src={Colibri} className="hidden dark:block" height={100} width={170} alt="client-colibri-construction-services" />
-                <Image src={ColibriLight} className="block dark:hidden" height={100} width={170} alt="client-peace-pelvic-health" />
-                <Image src={CV} className="hidden dark:block" height={100} width={170} alt="client-cristian-vargas" />
-                <Image src={CVLight} className="block dark:hidden" height={100} width={170} alt="client-cristian-vargas" />
+                <Image src={PeacePelvicHealth} className="hidden dark:block" height={100} width={180} alt="client-peace-pelvic-health" />
+                <Image src={PeacePelvicHealthLight} className="block dark:hidden" height={100} width={180} alt="client-peace-pelvic-health" />
+                <Image src={Colibri} className="hidden dark:block" height={100} width={180} alt="client-colibri-construction-services" />
+                <Image src={ColibriLight} className="block dark:hidden" height={100} width={180} alt="client-peace-pelvic-health" />
+                <Image src={CV} className="hidden dark:block" height={100} width={180} alt="client-cristian-vargas" />
+                <Image src={CVLight} className="block dark:hidden" height={100} width={180} alt="client-cristian-vargas" />
 
             </div>
         </div>

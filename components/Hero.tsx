@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { FaLocationArrow } from "react-icons/fa6";
+import { LiaFolder } from "react-icons/lia";
 import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
@@ -9,6 +9,9 @@ import codessa from "../public/codessa.svg"
 import codessa2 from "../public/codessa2.svg"
 import Sponsors from "./ui/Sponsors"
 import codessalight from "../public/codessalight.svg"
+import {
+  motion,
+} from "framer-motion";
 
 const Hero = () => {
   return (
@@ -42,7 +45,12 @@ const Hero = () => {
         />
       </div>
 
-      <div className="flex justify-center relative xxs:my-20 xs:my-16 xr:my-24 itp:my-24 z-10">
+      <motion.div 
+        initial={{ y: -100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        exit={{ y: -100, opacity: 0 }}
+        transition={{ duration: .80 }}
+        className="flex justify-center relative xxs:my-20 xs:my-16 xr:my-24 itp:my-24 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <Image src={codessa2} height={20} width={100} alt="logo" className="hidden dark:block tracking-widest text-xs text-center max-w-80">
           </Image>
@@ -55,22 +63,21 @@ const Hero = () => {
            *  change md:text-6xl, add more responsive code
            */}
           <TextGenerateEffect
-            words="Stress-Free Websites for Small Businesses."
+            words="Stress-Free Websites & Support for Businesses"
             className="text-center xxs:text-[42px] xs:text-[38px] itp:text-[44px] xr:text-[48px] md:text-5xl lg:text-6xl"
           />
 
           <p className="text-center md:tracking-wider mb-4 xxs:text-lg xs:text-sm itp:text-lg xr:text-lg text-sm md:text-lg lg:text-1xl">
-          Chicago Web Design and Development Firm creating custom websites that take the hassle out of your online presence. You focus on your business—let us handle your website with care.</p>
-
+          We craft custom websites that elevate your brand and grow your business—without the stress. With personalized web development and seamless, hands-off management, we give you the tools to succeed online while you focus on what matters most.</p>
           <a href="#about">
             <MagicButton
               title="View our Portfolio"
-              icon={<FaLocationArrow />}
+              icon={<LiaFolder />}
               position="right"
             />
           </a>
         </div>
-      </div>
+      </motion.div>
       <Sponsors/>
     </div>
   );

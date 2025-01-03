@@ -50,7 +50,7 @@ const DarkModeToggle = () => {
   return (
     <button
       onClick={toggleDarkMode}
-      className="p-2 rounded-full border-2 border-gray-300 dark:border-gray-700 focus:outline-none"
+      className="p-2 rounded-full  focus:outline-none"
     >
       {isDarkMode ? <FaSun size={24} /> : <FaMoon className="text-white" size={24} />}
     </button>
