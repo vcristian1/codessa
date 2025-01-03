@@ -9,7 +9,7 @@ import Image from "next/image"
 
 const Sponsors = () => {
     return (
-        <div id="clients" className="bg-slate-100 dark:bg-black-100">
+        <div id="clients" className="relative z-10 bg-slate-100 dark:bg-black-100">
             <div className="flex justify-center xs:gap-[1px] lg:gap-6">
                 <Image src={PeacePelvicHealth} className="hidden dark:block" height={100} width={180} alt="client-peace-pelvic-health" />
                 <Image src={PeacePelvicHealthLight} className="block dark:hidden" height={100} width={180} alt="client-peace-pelvic-health" />

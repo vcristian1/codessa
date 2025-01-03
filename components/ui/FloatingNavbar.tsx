@@ -14,6 +14,7 @@ import codessa from "../../public/codessa.svg";
 import { IoMdClose } from "react-icons/io";
 import { FaAlignRight } from "react-icons/fa";
 import DarkModeToggle from "@/components/ui/DarkModeToggle"
+import codessalight2 from "../../public/codessalight2.svg"
 
 export const FloatingNav = ({
   navItems,
@@ -69,7 +70,7 @@ export const FloatingNav = ({
             exit={{ y: -100, opacity: 0 }}
             transition={{ duration: .8 }}
             className={cn(
-              "dark:bg-[rgba(0, 0, 0, .4)] bg-black-100 hidden lg:flex overflow-x-auto md:max-w-fit md:min-w-[70vw] lg:min-w-fit fixed z-[5000] top-10 inset-x-0 mx-auto px-10 py-4 rounded-lg border border-black/.1 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] items-center justify-center space-x-4",
+              "dark:bg-[rgba(0, 0, 0, .4)] bg-black-100 hidden lg:flex overflow-x-auto md:max-w-fit md:min-w-[70vw] lg:min-w-fit fixed z-[5000] top-10 inset-x-0 mx-auto px-10 py-4 rounded-lg border border-black/.1 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] dark: items-center justify-center space-x-4",
               className
             )}
             style={{
@@ -112,10 +113,11 @@ export const FloatingNav = ({
       <div
         className={cn(
           "lg:hidden fixed top-0 left-0 right-0 z-[5001] w-full h-[72px] flex justify-between items-center px-8 transition duration-500",
-          scrolled ? "bg-black" : "bg-transparent"
+          scrolled ? "bg-slate-100 dark:bg-black-100" : "bg-transparent"
         )}
       >
-        <Image className="z-6" src={codessa} alt="logo" height={25} width={90} />
+        <Image className="hidden dark:block z-6" src={codessa} alt="logo" height={25} width={90} />
+        <Image className="block dark:hidden z-6" src={codessalight2} alt="logo" height={25} width={90} />
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="p-3 text-white rounded-full"
@@ -132,14 +134,14 @@ export const FloatingNav = ({
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.8 }}
             transition={{ duration: 0.3 }}
-            className="fixed top-0 left-0 right-0 bottom-0 z-[5000] flex justify-center items-center backdrop-blur-lg"
+            className="fixed top-0 left-0 right-0 bottom-0 z-[5000] flex justify-center items-center backdrop-blur-sm"
           >
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.8 }}
               transition={{ duration: 0.3 }}
-              className="bg-black-100 text-white w-[80vw] md:w-[400px] p-6 rounded-lg shadow-lg space-y-6"
+              className="bg-black-100 text-white w-[80vw] md:w-[400px] p-5 rounded-lg space-y-6"
               style={{
                 backdropFilter: "blur(80px) saturate(180%)",
                 backgroundColor: "",
@@ -151,7 +153,7 @@ export const FloatingNav = ({
                 <Link
                   key={`mobile-link-${idx}`}
                   href={navItem.link}
-                  className="block text-lg font-medium hover:text-blue-400"
+                  className="block text-lg font-medium hover:text-[#5e17eb]"
                 >
                   {navItem.name}
                 </Link>
