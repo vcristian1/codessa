@@ -70,7 +70,7 @@ export const FloatingNav = ({
             exit={{ y: -100, opacity: 0 }}
             transition={{ duration: .4 }}
             className={cn(
-              "dark:bg-[rgba(0, 0, 0, .4)] bg-black-100 hidden lg:flex overflow-x-auto md:max-w-fit md:min-w-[70vw] lg:min-w-fit fixed z-[5000] top-10 lg:top-0 inset-x-0 mx-auto px-10 py-4 rounded-lg border border-black/.1 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] dark: items-center justify-center space-x-4",
+              "dark:bg-[rgba(0, 0, 0, .4)] bg-black-100 hidden lg:flex overflow-x-auto md:max-w-fit md:min-w-[70vw] lg:min-w-fit fixed z-[100] top-10 lg:top-0 inset-x-0 mx-auto px-10 py-4 rounded-lg border border-black/.1 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] dark: items-center justify-center space-x-4",
               
             )}
             style={{
@@ -86,11 +86,11 @@ export const FloatingNav = ({
                 key={`link-${idx}`}
                 href={navItem.link}
                 className={cn(
-                  "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-50 dark:hover:text-neutral-300 hover:text-neutral-500"
+                  "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-50 dark:hover:text-neutral-300 hover:text-neutral-500 transition duration-500"
                 )}
               >
                 <span className="block sm:hidden">{navItem.icon}</span>
-                <span className="sm:block text-sm !cursor-pointer">
+                <span className="sm:block text-sm">
                   {navItem.name}
                 </span>
               </Link>
@@ -98,7 +98,7 @@ export const FloatingNav = ({
             <button className="relative inline-flex h-10 w-auto overflow-hidden rounded-lg p-[1.5px] focus:outline-none">
               <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
               <span
-                className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg
+                className="inline-flex h-full w-full items-center justify-center rounded-lg
                 bg-slate-950 px-5 py-2 text-sm font-medium text-white backdrop-blur-3xl"
               >
                 Schedule your Consultation
@@ -162,7 +162,7 @@ export const FloatingNav = ({
                 <button className="mb-2 relative inline-flex h-10 w-auto overflow-hidden rounded-lg p-[1.5px] focus:outline-none">
                   <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
                   <span
-                    className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg
+                    className="inline-flex h-full w-full items-center justify-center rounded-lg
                       bg-slate-950 px-5 py-2 text-sm font-medium text-white backdrop-blur-3xl"
                   >
                     Schedule your Consultation
