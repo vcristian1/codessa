@@ -39,20 +39,40 @@ const RecentProjects = () => {
             fill="gray"
           />
       </div>
-      <h1 className="heading">
-        Where{" "}
-        <span className="dark:text-[indigo-500] text-[#5e17eb]">
-          Web Solutions
-        </span>{" "}Meet
-        <span className="dark:text-[indigo-500] text-[#5e17eb]">
-          {" "}Success
-        </span>
-      </h1>
-      
+      <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.5 }}
+      transition={{ delay: .175, duration: 0.8 }}
+      variants={{
+          hidden: { opacity: 0, y: -50 },
+          visible: { opacity: 1, y: 0 },
+      }} 
+      >
+        <h1 className="heading">
+          Where{" "}
+          <span className="dark:text-[indigo-500] text-[#5e17eb]">
+            Web Solutions
+          </span>{" "}Meet
+          <span className="dark:text-[indigo-500] text-[#5e17eb]">
+            {" "}Success
+          </span>
+        </h1>
+      </motion.div>
+
       <Box as="section" className="xs:pt-[60px] lg:pt-[40px] bg-[var(--background)] dark:bg-black-100">
         <Container className="relative">
-          <Box className="overflow-hidden sm:overflow-x-auto mb-8">
-            <div className="flex justify-center items-center gap-2 lg:gap-x-6">
+          <Box className="sm:overflow-x-auto mb-8">
+            <motion.div 
+            className="flex justify-center items-center gap-2 lg:gap-x-6"
+            initial="hidden"
+            whileInView="visible"
+            transition={{ delay: .175, duration: 0.9 }}
+            variants={{
+                hidden: { opacity: 0, y: -60 },
+                visible: { opacity: 1, y: 0 },
+            }} 
+            >
               <button
                 onClick={() => handleTab("health")}
                 className="relative inline-flex h-12 w-full md:w-60 md:mt-10 overflow-hidden rounded-lg p-[1.5px] focus:outline-none"
@@ -94,7 +114,7 @@ const RecentProjects = () => {
                   CV
                 </span>
               </button>
-            </div>
+            </motion.div>
           </Box>
           <div className="min-h-[190px] relative">
             {tab.active === "health" && (
