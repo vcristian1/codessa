@@ -7,8 +7,8 @@ interface BlockTitleProps {
 
 const BlockTitle: React.FC<BlockTitleProps> = ({ title, text }) => {
   return (
-    <div className="text-center mb-20 md:mb-32">
-      <h3 className="text-[#0F2137] text-3xl md:text-4xl font-bold tracking-[-1.5px] leading-none mb-5">
+    <div className="text-center mb-16 lg:mb-20">
+      <h3 className="text-[#0F2137] text-2xl md:text-3xl font-semibold tracking-[-1.5px] leading-tight mb-5">
         {title}
       </h3>
       <p className="text-[#858B91] text-lg leading-relaxed">

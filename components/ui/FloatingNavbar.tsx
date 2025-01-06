@@ -15,6 +15,7 @@ import { IoMdClose } from "react-icons/io";
 import { FaAlignRight } from "react-icons/fa";
 import DarkModeToggle from "@/components/ui/DarkModeToggle"
 import codessalight2 from "../../public/codessalight2.svg"
+import { BiLogoZoom } from "react-icons/bi";
 
 export const FloatingNav = ({
   navItems,
@@ -101,7 +102,7 @@ export const FloatingNav = ({
                 className="inline-flex h-full w-full items-center justify-center rounded-lg
                 bg-slate-950 px-5 py-2 text-sm font-medium text-white backdrop-blur-3xl"
               >
-                Schedule your Consultation
+                Schedule your Zoom Consultation <BiLogoZoom />
               </span>
             </button>
             <DarkModeToggle />

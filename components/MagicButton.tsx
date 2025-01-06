@@ -13,12 +13,14 @@ import React from "react";
 const MagicButton = ({
   title,
   icon,
+  href,
   position,
   handleClick,
   otherClasses,
 }: {
   title: string;
-  icon: React.ReactNode;
+  icon?: React.ReactNode;
+  href?: string;
   position: string;
   handleClick?: () => void;
   otherClasses?: string;

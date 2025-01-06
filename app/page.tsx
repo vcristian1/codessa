@@ -6,8 +6,9 @@ import Hero from "@/components/Hero";
 // import Grid from "@/components/Grid";
 import Footer from "@/components/Footer";
 // import Clients from "@/components/Clients";
-// import Approach from "@/components/Approach";
+import Approach from "@/components/Approach";
 // import Experience from "@/components/Experience";
+import Services from "@/components/Services"
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import Sponsors from "@/components/ui/Sponsors"
@@ -22,7 +23,7 @@ const Home = () => {
             innerSize={14}
             outerSize={14}
             color='94, 23, 245'
-            outerAlpha={0.2}
+            outerAlpha={0.1}
             innerScale={0.4}
             outerScale={5}
             clickables={[
@@ -67,10 +68,11 @@ const Home = () => {
         <FloatingNav navItems={navItems} />
         <Hero />
         <RecentProjects />
+        <Services />
+        <Approach />
         {/* <Grid />
         <Clients />
         <Experience />
-        <Approach />
         */}
         <Footer /> 
       </div>
