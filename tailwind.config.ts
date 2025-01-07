@@ -34,6 +34,12 @@ const config = {
       },
     },
     extend: {
+      backgroundImage: {
+        "chicagoSkyline": "url('/chicagoskyline.png')",
+        "chicagoTrain": "url('/chicagotrain.png')",
+        "chicagoTheater": "url('/chicagotheather.png')",
+
+      },
       colors: {
         black: {
           DEFAULT: "#000",

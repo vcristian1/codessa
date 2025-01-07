@@ -35,7 +35,7 @@ const RecentProjects = () => {
   };
 
   return (
-    <div id="projects" className="py-10 bg-slate-200 dark:bg-black-100">
+    <div id="projects" className="py-20 bg-slate-200 dark:bg-black-100">
       <div>
         <Spotlight
             className="z-[0] mt-[-325px] md:-left-32 left-[-100px]"
@@ -53,12 +53,12 @@ const RecentProjects = () => {
       }} 
       >
         <h1 className="heading">
-          Where{" "}
+          Featured{" "}
           <span className="dark:text-[indigo-500] text-[#5e17eb]">
-            Web Design
-          </span>{" "}Meets
+            Web Design & Development
+          </span>{" "}Projects
           <span className="dark:text-[indigo-500] text-[#5e17eb]">
-            {" "}Success
+            {" "}
           </span>
         </h1>
       </motion.div>
@@ -78,7 +78,7 @@ const RecentProjects = () => {
           >
             <button
               onClick={() => handleTab("health")}
-              className={`inline-flex h-14 w-full md:w-60 md:mt-10 overflow-hidden rounded-lg p-[1.5px] focus:outline-none
+              className={`inline-flex h-14 w-full md:w-60 md:mt-10 overflow-hidden rounded-lg p-[1.5px] focus:outline-none lt:text-left
                 transition duration-500
                 ${tab.active === "health" ? "opacity-100" : "opacity-30 hover:opacity-50"}`}
             >
@@ -90,7 +90,7 @@ const RecentProjects = () => {
 
             <button
               onClick={() => handleTab("colibri")}
-              className={`inline-flex h-14 w-full md:w-60 md:mt-10 overflow-hidden rounded-lg p-[1.5px] focus:outline-none
+              className={`inline-flex h-14 w-full md:w-60 md:mt-10 overflow-hidden rounded-lg p-[1.5px] focus:outline-none lt:text-left
                 transition duration-500
                 ${tab.active === "colibri" ? "opacity-100" : "opacity-30 hover:opacity-50"}`}
             >
@@ -102,7 +102,7 @@ const RecentProjects = () => {
 
             <button
               onClick={() => handleTab("wedding")}
-              className={`inline-flex h-14 w-full md:w-60 md:mt-10 overflow-hidden rounded-lg p-[1.5px] focus:outline-none
+              className={`inline-flex h-14 w-full md:w-60 md:mt-10 overflow-hidden rounded-lg p-[1.5px] focus:outline-none lt:text-left
                 transition duration-500
                 ${tab.active === "wedding" ? "opacity-100" : "opacity-30 hover:opacity-50"}`}
             >
@@ -125,7 +125,7 @@ const RecentProjects = () => {
                 className="tb:flex tb:gap-x-6 lg:gap-x-10"
               >
                 <Image src={tabImage1} height={400} width={500} alt="tab image" className="xxs:items-center rounded-lg" />
-                <div className="tb:flex-col xs:mt-10 text-center lt:text-left">
+                <div className="tb:flex-col xs:mt-10 lt:text-left">
                   <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -149,7 +149,7 @@ const RecentProjects = () => {
                     </motion.div>
                   </div>
                 </div>
-                <div className="lg:flex-col xs:mt-10 text-center lt:text-left">
+                <div className="lg:flex-col xs:mt-10 lt:text-left">
                   <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}

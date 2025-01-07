@@ -14,7 +14,7 @@ const Sponsors = () => {
     return (
         <motion.div 
             id="clients" 
-            className="hidden lt:block relative z-10 bg-slate-200 dark:bg-black-100 mx-auto overflow-hidden"
+            className="relative z-10 bg-slate-200 dark:bg-black-100 mx-auto overflow-hidden"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
@@ -24,11 +24,13 @@ const Sponsors = () => {
                 visible: { opacity: 1, y: 0 },
             }}    
         >
-            <div className="flex justify-evenly xs:gap-[1px] ">
+            <div className="flex justify-evenly xs:gap-[1px] lg:gap-6">
                 <Image src={PeacePelvicHealth} className="hidden dark:block" height={100} width={150} alt="client-peace-pelvic-health" />
                 <Image src={PeacePelvicHealthLight} className="block dark:hidden" height={100} width={150} alt="client-peace-pelvic-health" />
                 <Image src={Colibri} className="hidden dark:block" height={100} width={150} alt="client-colibri-construction-services" />
                 <Image src={ColibriLight} className="block dark:hidden" height={100} width={150} alt="client-peace-pelvic-health" />
+                <Image src={CV} className="hidden dark:block" height={100} width={150} alt="client-cristian-vargas" />
+                <Image src={CVLight} className="block dark:hidden" height={100} width={150} alt="client-cristian-vargas" />
             </div>
         </motion.div>
             

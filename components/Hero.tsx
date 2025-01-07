@@ -12,6 +12,7 @@ import codessalight from "../public/codessalight.svg"
 import {
   motion,
 } from "framer-motion";
+import { companies } from "@/data"
 
 const Hero = () => {
   return (
@@ -63,7 +64,7 @@ const Hero = () => {
            *  change md:text-6xl, add more responsive code
            */}
           <TextGenerateEffect
-            words="Stress-Free Websites & Support for Businesses."
+            words="Stress-Free Websites & Management for Businesses."
             className="text-center xxs:text-[42px] xs:text-[38px] itp:text-[44px] xr:text-[48px] md:text-5xl lg:text-6xl"
           />
 
@@ -78,7 +79,30 @@ const Hero = () => {
           </a>
         </div>
       </motion.div>
-      <Sponsors/>
+      <div className="flex flex-wrap items-center justify-evenly md:gap-16 max-lg:mt-10">
+          {companies.map((company) => (
+            <React.Fragment key={company.id}>
+              <div className="flex max-w-full gap-x-[12px] sm:max-w-40 md:max-w-60">
+                <Image
+                  src={company.darkImg}
+                  alt={company.name}
+                  className="w-auto h-auto max-w-[60px] hidden dark:block"
+                  height={50}
+                  width={100}
+                />
+                <Image
+                  src={company.lightImg}
+                  alt={company.name}
+                  className="w-auto h-auto max-w-[60px] block dark:hidden"
+                  height={50}
+                  width={100}
+                />
+                
+              </div>
+            </React.Fragment>
+          ))}
+        </div>
+      {/* <Sponsors/> */}
     </div>
   );
 };

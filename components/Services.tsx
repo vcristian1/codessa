@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const Services: React.FC = () => {
   return (
-    <section id="services" className="pt-20 md:pt-20 lg:pt-24">
+    <section id="services" className="pt-10 md:pt-10 lg:pt-14">
       <div className="container mx-auto">
         <motion.div
         initial="hidden"
@@ -21,12 +21,12 @@ const Services: React.FC = () => {
         className="pt-16 md:pt-16 lg:pt-20 pb-20 md:pb-20 lg:pb-24" 
         >
             <h1 className="heading">
-            Services That{" "}
+            Our{" "}
             <span className="dark:text-[indigo-500] text-[#5e17eb]">
-                Empower Growth
-            </span>{" "}
+                Web Design & Development
+            </span>{" "} Services
             <span className="dark:text-[indigo-500] text-[#5e17eb]">
-                {" "}
+                {" "} 
             </span>
             </h1>
         </motion.div>
