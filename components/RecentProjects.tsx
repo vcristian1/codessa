@@ -54,7 +54,7 @@ const RecentProjects = () => {
       >
         <h1 className="heading text-[#5e17eb]">
           Featured{" "}
-          <span className="text-black-100">
+          <span className="text-black-100 dark:text-white">
             Web Design & Development
           </span>{" "}Projects
         </h1>

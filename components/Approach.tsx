@@ -7,7 +7,7 @@ const Approach = () => {
   return (
     <section className="w-full xxs:pt-36 lt:pt-40">
       <h1 className="heading text-[#5e17eb]">
-        Strategies <span className="text-black-100">That Drive Results</span>
+        Strategies <span className="text-black-100 dark:text-white">That Drive Results</span>
       </h1>
       {/* remove bg-white dark:bg-black */}
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
