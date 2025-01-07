@@ -22,7 +22,7 @@ const Services: React.FC = () => {
         >
             <h1 className="heading text-[#5e17eb]">
             Our{" "}
-            <span className="text-black-100">
+            <span className="text-black-100 dark:text-white">
                 Web Design & Development
             </span>{" "} Services
             <span className="dark:text-[indigo-500] text-[#5e17eb]">
