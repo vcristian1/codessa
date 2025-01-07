@@ -6,8 +6,8 @@ import { AnimatePresence, motion } from "framer-motion";
 const Approach = () => {
   return (
     <section className="w-full xxs:pt-36 lt:pt-40">
-      <h1 className="heading">
-        Strategies That Drive <span className="text-purple">Results</span>
+      <h1 className="heading text-[#5e17eb]">
+        Strategies <span className="text-black-100">That Drive Results</span>
       </h1>
       {/* remove bg-white dark:bg-black */}
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
@@ -53,12 +53,14 @@ const Card = ({
   title,
   icon,
   des,
-  bgClass, // Add the bgClass prop
+  bgClass,
+  children // Add the bgClass prop
 }: {
   title: string;
   icon: React.ReactNode;
   des: string;
   bgClass: string; // Declare bgClass prop type
+  children?: React.ReactNode; // Make sure children is optional
 }) => {
   const [hovered, setHovered] = React.useState(false);
   return (
@@ -91,6 +93,7 @@ const Card = ({
         >
           {des}
         </p>
+        {children} {/* Render the children prop here */}
       </div>
     </div>
   );

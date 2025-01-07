@@ -52,14 +52,11 @@ const RecentProjects = () => {
           visible: { opacity: 1, y: 0 },
       }} 
       >
-        <h1 className="heading">
+        <h1 className="heading text-[#5e17eb]">
           Featured{" "}
-          <span className="dark:text-[indigo-500] text-[#5e17eb]">
+          <span className="text-black-100">
             Web Design & Development
           </span>{" "}Projects
-          <span className="dark:text-[indigo-500] text-[#5e17eb]">
-            {" "}
-          </span>
         </h1>
       </motion.div>
 
