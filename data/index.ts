@@ -12,78 +12,14 @@ import lightImage6 from "../public/service-6-light.svg"
 import darkImage6 from "../public/service-6-dark.svg"
 
 export const navItems = [
-  { name: "About Us", link: "#about" },
-  { name: "Clients", link: "#clients" },
+  { name: "Home", link: "#home" },
   { name: "Projects", link: "#projects" },
-  { name: "Services", link: "#contact" },
-  { name: "Approach", link: "#contact" },
-  { name: "Testimonials", link: "#contact" },
-  { name: "Why Choose", link: "#testimonials" },
+  { name: "Services", link: "#services" },
+  { name: "About Us", link: "#about" },
+  { name: "Testimonials", link: "#testimonials" },
+  { name: "Why Choose", link: "#whychoose" },
+  { name: "Approach", link: "#approach" },
   { name: "Contact", link: "#contact" },
-];
-
-export const gridItems = [
-  {
-    id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
-    description: "",
-    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
-    imgClassName: "w-full h-full",
-    titleClassName: "justify-end",
-    img: "/b1.svg",
-    spareImg: "",
-  },
-  {
-    id: 2,
-    title: "I'm very flexible with time zone communications",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    imgClassName: "",
-    titleClassName: "justify-start",
-    img: "",
-    spareImg: "",
-  },
-  {
-    id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    imgClassName: "",
-    titleClassName: "justify-center",
-    img: "",
-    spareImg: "",
-  },
-  {
-    id: 4,
-    title: "Tech enthusiast with a passion for development.",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-    imgClassName: "",
-    titleClassName: "justify-start",
-    img: "/grid.svg",
-    spareImg: "/b4.svg",
-  },
-
-  {
-    id: 5,
-    title: "Currently building a JS Animation library",
-    description: "The Inside Scoop",
-    className: "md:col-span-3 md:row-span-2",
-    imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-    titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "/b5.svg",
-    spareImg: "/grid.svg",
-  },
-  {
-    id: 6,
-    title: "Do you want to start a project together?",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-    imgClassName: "",
-    titleClassName: "justify-center md:max-w-full max-w-60 text-center",
-    img: "",
-    spareImg: "",
-  },
 ];
 
 export const projects = [
@@ -108,33 +44,24 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "As a mobile therapist, I needed a website that reflected the personalized care I provide and stood out in a competitive industry. Codessa made the process seamless, delivering a custom web application for Peace Pelvic Health that perfectly captures my vision. Since launch, I’ve received countless compliments on the polished, user-friendly design. What truly sets Codessa apart is their ongoing support—whether I need to add new pages, update content, or make adjustments, they are always available and incredibly responsive.",
+    name: "Natalia Avelar DPT, PRPC, Cert. MDT",
+    title: "Founder of Peace Pelvic Health PLLC.",
+    profileImage: "/profile.svg",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "As a full-service construction company that thrived for years on word-of-mouth referrals, we knew it was time for a website to showcase our 20+ years of experience. Codessa made the entire process seamless, delivering a custom website for Colibri Construction Services that highlights our work and expertise. SEO was a key focus, as we wanted to see if we could attract phone leads. Since launch, we've seen an increase in phone calls from people discovering us online. Their ongoing support has been a game changer—always responsive and quick with updates.",
+    name: "Carlos L. Vargas",
+    title: "Founder, Colibri Construction Services",
+    profileImage: "/profile.svg",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Codessa exceeded our expectations by creating a beautiful, custom website that included everything we needed. Our guests were able to easily access all event details, making the day go smoothly. The personal story section was a lovely touch, and the registry integration made gift-giving much easier. The barn-inspired design was not only user-friendly but also perfectly captured our unique style. Codessa made the process seamless, and we couldn’t be happier with the final result. It became the go-to resource for our wedding day, and we are so grateful for their work!",
+    name: "Jacqueline Vargas",
+    title: "Home Baker",
+    profileImage: "/profile.svg",
   },
 ];
 

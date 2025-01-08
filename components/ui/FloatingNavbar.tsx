@@ -71,7 +71,7 @@ export const FloatingNav = ({
             exit={{ y: -100, opacity: 0 }}
             transition={{ duration: .4 }}
             className={cn(
-              "dark:bg-[rgba(0, 0, 0, .4)] bg-black-100 hidden lt:flex overflow-x-auto md:max-w-fit md:min-w-[70vw] lg:min-w-fit fixed z-[100] top-10 lt:top-0 inset-x-0 mx-auto px-10 py-4 rounded-lg border border-black/.1 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] dark: items-center justify-center space-x-4",
+              "bg-gradient-to-r from-[#04071d] to-[#0c0e23] hidden lt:flex overflow-x-auto md:max-w-fit md:min-w-[70vw] lg:min-w-fit fixed z-[100] top-10 lt:top-0 inset-x-0 mx-auto px-10 py-4 rounded-lg items-center justify-center space-x-4",
               
             )}
             style={{

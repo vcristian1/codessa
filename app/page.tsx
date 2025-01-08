@@ -5,8 +5,9 @@ import React from "react";
 import Hero from "@/components/Hero";
 // import Grid from "@/components/Grid";
 import Footer from "@/components/Footer";
-// import Clients from "@/components/Clients";
+import Clients from "@/components/Clients";
 import Approach from "@/components/Approach";
+import About from "@/components/About"
 // import Experience from "@/components/Experience";
 import Services from "@/components/Services"
 import RecentProjects from "@/components/RecentProjects";
@@ -69,11 +70,12 @@ const Home = () => {
         <Hero />
         <RecentProjects />
         <Services />
-        <Approach />
-        {/* <Grid />
+        <About />
         <Clients />
+        {/* <Grid />
         <Experience />
         */}
+        <Approach />
         <Footer /> 
       </div>
     </main>
