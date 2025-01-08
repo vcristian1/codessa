@@ -1,12 +1,8 @@
 "use client";
-
-import { FaLocationArrow } from "react-icons/fa6";
 import { FaBook } from "react-icons/fa";
 import { useState } from "react";
 import { projects } from "@/data";
-import { PinContainer } from "./ui/Pin";
 import { Box, Container, Button, Heading, Text } from "theme-ui";
-import dotPattern from "../public/dot-pattern.svg";
 import { keyframes } from "@emotion/react";
 import BlockTitle from "./ui/BlockTitle";
 import tabImage1 from "../public/project1.svg";
