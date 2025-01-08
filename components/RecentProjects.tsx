@@ -268,7 +268,7 @@ const RecentProjects = () => {
                     >
                       <Heading className="text-2xl font-semibold text-black-100 dark:text-slate-200">The Results</Heading>
                       <Text className="xxs:text-lg xs:text-sm itp:text-lg xr:text-lg text-sm md:text-lg lg:text-1xl text-gray-800 dark:text-gray-300">
-                      Jacqueline's guests can easily access all event information, reducing confusion and ensuring a smooth experience. The personal story section added a heartfelt touch, while the registry integration simplified gift-giving.
+                      Jacqueline&apos;s guests can easily access all event information, reducing confusion and ensuring a smooth experience. The personal story section added a heartfelt touch, while the registry integration simplified gift-giving.
                       </Text>
                     </motion.div>
                   </div>
