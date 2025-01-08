@@ -12,10 +12,11 @@ import lightImage6 from "../public/service-6-light.svg"
 import darkImage6 from "../public/service-6-dark.svg"
 
 export const navItems = [
-  { name: "Home", link: "#home" },
+  { name: "Intro", link: "#home" },
+  { name: "Tech Stack", link: "#tech-stack"},
+  { name: "About Us", link: "#about" },
   { name: "Projects", link: "#projects" },
   { name: "Services", link: "#services" },
-  { name: "About Us", link: "#about" },
   { name: "Testimonials", link: "#testimonials" },
   { name: "Why Choose", link: "#whychoose" },
   { name: "Approach", link: "#approach" },
@@ -69,39 +70,66 @@ export const companies = [
   {
     id: 1,
     name: "cloudinary",
-    lightImg: "/cloud.svg",
-    darkImg: "/cloud.svg",
+    img: "/cloud.svg",
     nameImg: "/cloudName.svg",
   },
   {
     id: 2,
-    name: "wordpress",
-    lightImg: "/cloud.svg",
-    darkImg: "/cloud.svg",
+    name: "appwrite",
+    img: "/app.svg",
     nameImg: "/appName.svg",
   },
   {
     id: 3,
-    name: "vercel",
-    lightImg: "/cloud.svg",
-    darkImg: "/cloud.svg",
+    name: "HOSTINGER",
+    img: "/host.svg",
     nameImg: "/hostName.svg",
   },
   {
     id: 4,
-    name: "next.js",
-    lightImg: "/cloud.svg",
-    darkImg: "/cloud.svg",
-    nameImg: "/streamName.svg",
-  },
-  {
-    id: 5,
-    name: "prisma",
-    lightImg: "/cloud.svg",
-    darkImg: "/cloud.svg",
+    name: "stream",
+    img: "/s.svg",
     nameImg: "/streamName.svg",
   },
 ];
+
+// export const companies = [
+//   {
+//     id: 1,
+//     name: "cloudinary",
+//     lightImg: "/cloud.svg",
+//     darkImg: "/cloud.svg",
+//     nameImg: "/cloudName.svg",
+//   },
+//   {
+//     id: 2,
+//     name: "wordpress",
+//     lightImg: "/cloud.svg",
+//     darkImg: "/cloud.svg",
+//     nameImg: "/appName.svg",
+//   },
+//   {
+//     id: 3,
+//     name: "vercel",
+//     lightImg: "/cloud.svg",
+//     darkImg: "/cloud.svg",
+//     nameImg: "/hostName.svg",
+//   },
+//   {
+//     id: 4,
+//     name: "next.js",
+//     lightImg: "/cloud.svg",
+//     darkImg: "/cloud.svg",
+//     nameImg: "/streamName.svg",
+//   },
+//   {
+//     id: 5,
+//     name: "prisma",
+//     lightImg: "/cloud.svg",
+//     darkImg: "/cloud.svg",
+//     nameImg: "/streamName.svg",
+//   },
+// ];
 
 export const workExperience = [
   {

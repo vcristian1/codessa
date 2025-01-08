@@ -32,8 +32,6 @@ const RecentProjects = () => {
 
   return (
     <div id="projects" className="py-20 lt:py-28 bg-slate-200 dark:bg-black-100">
-      <div>
-      </div>
       <motion.div
       initial="hidden"
       whileInView="visible"
@@ -52,7 +50,7 @@ const RecentProjects = () => {
         </h1>
       </motion.div>
 
-      <Box as="section" className="xs:pt-[60px] lg:pt-[40px] bg-[var(--background)] dark:bg-black-100">
+      <Box as="section" className="xs:pt-[60px] lg:pt-[40px] bg-[var(--background)] dark:bg-black-100 ">
         <Container className="relative">
           <Box className="sm:overflow-x-auto mb-8">
           <motion.div 
@@ -67,11 +65,11 @@ const RecentProjects = () => {
           >
             <button
               onClick={() => handleTab("health")}
-              className={`inline-flex h-14 w-full md:w-60 md:mt-10 overflow-hidden rounded-lg p-[1.5px] focus:outline-none lt:text-left
+              className={`inline-flex h-14 w-full md:w-60 md:mt-10 overflow-hidden focus:outline-none lt:text-left
                 transition duration-500
-                ${tab.active === "health" ? "opacity-100" : "opacity-30 hover:opacity-50"}`}
+                ${tab.active === "health" ? "opacity-100 lt:border-b-2 border-black-100 dark:border-slate-200" : "opacity-30 hover:opacity-50 "}`}
             >
-              <span className="inline-flex flex-col h-full w-full rounded-lg text-2xl font-semibold text-black dark:text-white">
+              <span className="inline-flex flex-col h-full w-full text-2xl font-semibold text-black dark:text-white">
                 <span className="font-semibold">Peace Pelvic Health</span>
                 <span className="text-xs text-gray-500 font-normal">Holistic Pelvic Floor Therapy</span>
               </span>
@@ -79,11 +77,11 @@ const RecentProjects = () => {
 
             <button
               onClick={() => handleTab("colibri")}
-              className={`inline-flex h-14 w-full md:w-60 md:mt-10 overflow-hidden rounded-lg p-[1.5px] focus:outline-none lt:text-left
+              className={`inline-flex h-14 w-full md:w-60 md:mt-10 overflow-hidden focus:outline-none lt:text-left
                 transition duration-500
-                ${tab.active === "colibri" ? "opacity-100" : "opacity-30 hover:opacity-50"}`}
+                ${tab.active === "colibri" ? "opacity-100 lt:border-b-2 border-black-100 dark:border-slate-200" : "opacity-30 hover:opacity-50 "}`}
             >
-              <span className="inline-flex flex-col h-full w-full rounded-lg text-2xl font-semibold text-black dark:text-white">
+              <span className="inline-flex flex-col h-full w-full text-2xl font-semibold text-black dark:text-white">
                 <span className="font-semibold">Colibri Construction</span>
                 <span className="text-xs text-gray-500 font-normal">Finding your next contractor made easy</span>
               </span>
@@ -91,11 +89,11 @@ const RecentProjects = () => {
 
             <button
               onClick={() => handleTab("wedding")}
-              className={`inline-flex h-14 w-full md:w-60 md:mt-10 overflow-hidden rounded-lg p-[1.5px] focus:outline-none lt:text-left
+              className={`inline-flex h-14 w-full md:w-60 md:mt-10 overflow-hidden focus:outline-none lt:text-left
                 transition duration-500
-                ${tab.active === "wedding" ? "opacity-100" : "opacity-30 hover:opacity-50"}`}
+                ${tab.active === "wedding" ? "opacity-100 lt:border-b-2 border-black-100 dark:border-slate-200" : "opacity-30 hover:opacity-50 "}`}
             >
-              <span className="inline-flex flex-col h-full w-full rounded-lg text-2xl font-semibold text-black dark:text-white">
+              <span className="inline-flex flex-col h-full w-full text-2xl font-semibold text-black dark:text-white">
                 <span className="font-semibold">Holy Matrimony</span>
                 <span className="text-xs text-gray-500 font-normal">A thoughtful platform for your special day</span>
               </span>
@@ -103,7 +101,7 @@ const RecentProjects = () => {
           </motion.div>
 
           </Box>
-          <div className="min-h-[190px] relative">
+          <div className="min-h-[190px] relative lt:mx-6">
             {tab.active === "health" && (
               <div className="lg:flex xs:pt-[-10px] pt-[80px] lg:pt-[40px] lg:min-h-[500px]">
               <motion.div
@@ -113,7 +111,7 @@ const RecentProjects = () => {
                 transition={{ delay: 0, duration: 0.9 }}
                 className="tb:flex tb:gap-x-6 lg:gap-x-10"
               >
-                <Image src={tabImage1} height={400} width={500} alt="tab image" className="xxs:items-center rounded-lg" />
+                <Image src={tabImage1} height={500} width={500} alt="tab image" className="xxs:items-center rounded-lg" />
                 <div className="tb:flex-col xs:mt-10 lt:text-left">
                   <motion.div
                     initial={{ opacity: 0 }}
@@ -135,7 +133,7 @@ const RecentProjects = () => {
                       >
                       <Heading className="text-2xl font-semibold text-black-100 dark:text-slate-200">The Results</Heading>
                       <Text className="xxs:text-lg xs:text-sm itp:text-lg xr:text-lg text-sm md:text-lg lg:text-1xl text-gray-800 dark:text-gray-300">
-                      Peace Pelvic Health PLLC ranks #1 on search engines for their business name. Achieved a 70% increase in website visits within three months. Inquiries and bookings rose by 33%, driving new client acquisition. Fully compliant with WCAG standards, ensuring inclusivity.
+                      Peace Pelvic Health PLLC ranks #1 on search engines for their business name. Achieved a 70% increase in website visits within three months. Inquiries and bookings rose by 33%, driving new client acquisition.
                       </Text>
                     </motion.div>
                   </div>
