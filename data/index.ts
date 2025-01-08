@@ -227,3 +227,54 @@ export const SERVICES_DATA = [
     path: '/webdevelopment',
   },
 ];
+
+export const WhyChooseData = [
+  {
+    lightImage: lightImage1,
+    darkImage: darkImage1,
+    text:
+      'At Codessa, we prioritize transparency. By opening up our workflows, we foster informed collaboration and empower everyone to make smarter decisions.',
+    heading: 'Clarity',
+    path: '#',
+  },
+  {
+    lightImage: lightImage2,
+    darkImage: darkImage2,
+    text:
+      'Accountability drives us. We measure and track our actions to ensure we deliver on our promises. At Codessa, every team member stands behind their work.',
+    heading: 'Integrity',
+    path: '#',
+  },
+  {
+    lightImage: lightImage3,
+    darkImage: darkImage3,
+    text:
+      "Work ethic at Codessa means delivering high-quality results with purpose. We’re not about just completing tasks; we focus on doing things right.",
+    heading: 'Precision',
+    path: '#',
+  },
+  {
+    lightImage: lightImage4,
+    darkImage: darkImage4,
+    text:
+      'Curiosity is at the heart of innovation. At Codessa, we support continuous learning by providing opportunities for professional development.',
+    heading: 'Growth',
+    path: '#',
+  },
+  {
+    lightImage: lightImage5,
+    darkImage: darkImage5,
+    text:
+      'Innovation is our mindset. At Codessa, we do not wait for change to happen; we create it. We encourage our team to lead, challenge norms, and pioneer new paths to build the future of digital products.',
+    heading: 'Pioneering',
+    path: '#',
+  },
+  {
+    lightImage: lightImage6,
+    darkImage: darkImage6,
+    text:
+      'Authenticity is essential to Codessa’s culture. We are honest, dependable, and transparent in everything we do. Building trust with our clients and within our team is our top priority.',
+    heading: 'Trust',
+    path: '/webdevelopment',
+  },
+];

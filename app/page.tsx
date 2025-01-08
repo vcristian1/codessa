@@ -3,11 +3,11 @@
 import { navItems } from "@/data";
 import React from "react";
 import Hero from "@/components/Hero";
-// import Grid from "@/components/Grid";
 import Footer from "@/components/Footer";
 import Clients from "@/components/Clients";
 import Approach from "@/components/Approach";
 import About from "@/components/About"
+import WhyChoose from "@/components/WhyChoose"
 // import Experience from "@/components/Experience";
 import Services from "@/components/Services"
 import RecentProjects from "@/components/RecentProjects";
@@ -75,6 +75,7 @@ const Home = () => {
         {/* <Grid />
         <Experience />
         */}
+        <WhyChoose />
         <Approach />
         <Footer /> 
       </div>

@@ -42,7 +42,7 @@ const RecentProjects = () => {
           visible: { opacity: 1, y: 0 },
       }} 
       >
-        <h1 className="heading text-[#5e17eb]">
+        <h1 className="font-bold text-4xl md:text-5xl text-left lt:text-center text-[#5e17eb]">
           Featured{" "}
           <span className="text-black-100 dark:text-white">
             Web Design & Development
@@ -124,7 +124,7 @@ const RecentProjects = () => {
                       Peace Pelvic Health PLLC needed an accessible website to highlight their expertise, treatments, and zen-inspired brand. It was essential for the site to be accessible while maximizing visibility through strong SEO.
                     </Text>
                   </motion.div>
-                  <div className="xs:mt-10">
+                  {/* <div className="xs:mt-10">
                     <motion.div
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
@@ -136,7 +136,7 @@ const RecentProjects = () => {
                       Peace Pelvic Health PLLC ranks #1 on search engines for their business name. Achieved a 70% increase in website visits within three months. Inquiries and bookings rose by 33%, driving new client acquisition.
                       </Text>
                     </motion.div>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="lg:flex-col xs:mt-10 lt:text-left">
                   <motion.div
@@ -189,7 +189,7 @@ const RecentProjects = () => {
                   Colibri Construction Services needed a custom website to expand their strong word-of-mouth business online. They required flexibility for future technology integrations and a focus on SEO to attract potential clients searching for construction services in Chicago.
                   </Text>
                 </motion.div>
-                <div className="xs:mt-10">
+                {/* <div className="xs:mt-10">
                   <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -201,7 +201,7 @@ const RecentProjects = () => {
                     Colibri now has a custom website that ranks well for construction services in Chicago, driving traffic and increasing visibility. The user-friendly design allows for easy content updates and management of inquiries, converting visitors into leads.
                     </Text>
                   </motion.div>
-                </div>
+                </div> */}
               </div>
               <div className="lg:flex-col xs:mt-10">
                 <motion.div
@@ -253,7 +253,7 @@ const RecentProjects = () => {
                     Jacqueline needed a wedding website to provide guests with essential event details, including ceremony time, location, and registry information. The site also needed a barn-style design to reflect the wedding venue and a personal touch showcasing their love story.
                     </Text>
                   </motion.div>
-                  <div className="xs:mt-10">
+                  {/* <div className="xs:mt-10">
                     <motion.div
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
@@ -265,7 +265,7 @@ const RecentProjects = () => {
                       Jacqueline&apos;s guests can easily access all event information, reducing confusion and ensuring a smooth experience. The personal story section added a heartfelt touch, while the registry integration simplified gift-giving.
                       </Text>
                     </motion.div>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="lg:flex-col xs:mt-10">
                   <motion.div

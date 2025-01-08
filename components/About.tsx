@@ -22,7 +22,7 @@ const About = () => {
                 }} 
             >
                 {/* Text Content */}
-                <div className="lt:w-4/5">
+                <div className="px-3 lt:w-4/5">
                     {/* Headings Here */}
                     <motion.div 
                         className="lt:w-5/6 lt:px-12 lt:px-18"
@@ -41,8 +41,8 @@ const About = () => {
                             Web Design & Development
                         </span>{" "}Firm
                         </h1>
-                        <p className="text-center lt:text-left md:tracking-wider mb-4 xxs:text-lg xs:text-sm itp:text-lg xr:text-lg text-sm md:text-lg lg:text-1xl">
-                        Codessa is a Web Design and Development Firm based in Chicago, offering personalized, stress-free website solutions. We combine custom development with the convenience of platforms like Squarespace, ensuring clients receive a tailored website without the need for ongoing management. We handle everything—from design and SEO optimization to regular updates and content changes—allowing clients to focus on their business while we take care of their online presence. 
+                        <p className="lt:text-left md:tracking-wider mb-4 xxs:text-lg xs:text-sm itp:text-lg xr:text-lg text-sm md:text-lg lg:text-1xl">
+                        Codessa is a Web Design and Development Firm based in Chicago, offering personalized, stress-free website solutions. We combine custom development with the convenience of platforms like Squarespace, ensuring clients receive a tailored website without the need for ongoing management. We handle everything—from design and SEO optimization to deployment and regular updates/content changes. 
                         </p>
                     </motion.div>
                 </div>

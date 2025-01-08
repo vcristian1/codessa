@@ -73,7 +73,7 @@ const Hero = () => {
           </a>
         </div>
       </motion.div>
-      <div id="tech-stack" className="flex flex-wrap items-center justify-evenly md:gap-16 max-lg:mt-10">
+      <div  id="tech-stack" className="flex flex-wrap items-center justify-evenly md:gap-16 max-lg:mt-10">
         {companies.map((company) => (
             <React.Fragment key={company.id}>
               <div className="flex md:max-w-60 max-w-32 gap-2">
