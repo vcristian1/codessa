@@ -278,7 +278,7 @@ const RecentProjects = () => {
                   >
                     <Heading className="text-2xl font-semibold text-black-100 dark:text-slate-200">The Solution</Heading>
                     <Text className="xxs:text-lg xs:text-sm itp:text-lg xr:text-lg text-sm md:text-lg lg:text-1xl text-gray-800 dark:text-gray-300">
-                    We created a custom, barn-inspired website with clear event details, a dedicated registry section, and a personal story. The design is user-friendly and tailored to the venue's style, making it the go-to resource.
+                    We created a custom, barn-inspired website with clear event details, a dedicated registry section, and a personal story. The design is user-friendly and tailored to the venue&apos;s style, making it the go-to resource.
                     </Text>
                   </motion.div>
                   <motion.div
