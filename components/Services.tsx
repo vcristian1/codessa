@@ -21,7 +21,7 @@ const Services: React.FC = () => {
         className="pb-20 md:pb-20 lg:pb-24" 
         >
             <h1 className="heading text-[#5e17eb]">
-            Our{" "}
+            {" "}
             <span className="text-black-100 dark:text-white">
                 Web Design & Development
             </span>{" "} Services

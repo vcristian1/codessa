@@ -31,7 +31,7 @@ const RecentProjects = () => {
   };
 
   return (
-    <div id="projects" className="py-20 lt:py-28 bg-slate-200 dark:bg-black-100">
+    <div id="projects" className="py-20 lt:py-20 bg-slate-200 dark:bg-black-100 w-full">
       <motion.div
       initial="hidden"
       whileInView="visible"
@@ -42,15 +42,15 @@ const RecentProjects = () => {
           visible: { opacity: 1, y: 0 },
       }} 
       >
-        <h1 className="font-bold text-4xl md:text-5xl text-left lt:text-center text-[#5e17eb]">
+        <h1 className="text-left tb:text-center font-bold text-4xl md:text-5xl text-[#5e17eb] my-5 lt:my-8 w-full">
           Featured{" "}
           <span className="text-black-100 dark:text-white">
-            Web Design & Development
+              Web Design & Development
           </span>{" "}Projects
         </h1>
       </motion.div>
 
-      <Box as="section" className="xs:pt-[60px] lg:pt-[40px] bg-[var(--background)] dark:bg-black-100 ">
+      <Box as="section" className="xs:pt-[60px] lg:pt-[10px] dark:bg-black-100 ">
         <Container className="relative">
           <Box className="sm:overflow-x-auto mb-8">
           <motion.div 
@@ -186,7 +186,7 @@ const RecentProjects = () => {
                 >
                   <Heading className="text-2xl font-semibold text-black-100 dark:text-slate-200">The Challenge</Heading>
                   <Text className="text-black-100 dark:text-slate-200 xxs:text-lg xs:text-sm itp:text-lg xr:text-lg text-sm md:text-lg lg:text-1xl">
-                  Colibri Construction Services needed a custom website to expand their strong word-of-mouth business online. They required flexibility for future technology integrations and a focus on SEO to attract potential clients searching for construction services in Chicago.
+                  Colibri Construction Services needed a custom website to expand their strong word-of-mouth business online. They required a focus on SEO to attract potential clients searching for construction services in Chicago.
                   </Text>
                 </motion.div>
                 {/* <div className="xs:mt-10">
@@ -220,12 +220,14 @@ const RecentProjects = () => {
                   animate={{ opacity: 1 }}
                   transition={{ delay: 1.48, duration: 0.9 }}
                   >
-                    <MagicButton
+                    <a href="/Colibri">
+                      <MagicButton
                         title="View Case Study"
                         icon={<FaBook />}
                         position="right"
-                        href="/"
                       />
+                    </a>
+                    
                   </motion.div>
               </div>
             </motion.div>
@@ -250,7 +252,7 @@ const RecentProjects = () => {
                   >
                     <Heading className="text-2xl font-semibold text-black-100 dark:text-slate-200">The Challenge</Heading>
                     <Text className="xxs:text-lg xs:text-sm itp:text-lg xr:text-lg text-sm md:text-lg lg:text-1xl text-gray-800 dark:text-gray-300">
-                    Jacqueline needed a wedding website to provide guests with essential event details, including ceremony time, location, and registry information. The site also needed a barn-style design to reflect the wedding venue and a personal touch showcasing their love story.
+                    Jacqueline needed a wedding website to provide guests with essential event details, including ceremony time, location, registry information, and FAQs. The website also needed a barn-style design to reflect the wedding venue with a section showcasing their love story.
                     </Text>
                   </motion.div>
                   {/* <div className="xs:mt-10">
@@ -276,7 +278,7 @@ const RecentProjects = () => {
                   >
                     <Heading className="text-2xl font-semibold text-black-100 dark:text-slate-200">The Solution</Heading>
                     <Text className="xxs:text-lg xs:text-sm itp:text-lg xr:text-lg text-sm md:text-lg lg:text-1xl text-gray-800 dark:text-gray-300">
-                    We created a custom, barn-inspired website with clear event details, a dedicated registry section, and a personal story. The design is user-friendly and tailored to the couple&apos;s unique style, making it the go-to resource for their wedding day.
+                    We created a custom, barn-inspired website with clear event details, a dedicated registry section, and a personal story. The design is user-friendly and tailored to the venue's style, making it the go-to resource.
                     </Text>
                   </motion.div>
                   <motion.div

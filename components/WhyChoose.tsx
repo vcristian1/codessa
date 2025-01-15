@@ -1,13 +1,13 @@
 import React from 'react';
 import BlockTitle from '../components/ui/BlockTitle';
-import ServiceCard from '../components/ui/ServiceCard';
+import WhyChooseCard from '../components/ui/WhyChooseCard';
 import { WhyChooseData } from "@/data";
 import { Box, Container, Grid } from 'theme-ui';
 import { motion } from "framer-motion";
 
 const WhyChoose: React.FC = () => {
   return (
-    <section id="whychoose" className="py-20 md:py-20 lg:py-24">
+    <section id="whychoose" className="py-14 md:py-20 lg:py-24">
       <div className="container mx-auto">
         <motion.div
         initial="hidden"
@@ -32,7 +32,7 @@ const WhyChoose: React.FC = () => {
         </motion.div>
         <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {WhyChooseData.map(({ lightImage, darkImage, text, heading, path }, index) => (
-            <ServiceCard
+            <WhyChooseCard
               darkImage={darkImage}
               lightImage={lightImage}
               text={text}

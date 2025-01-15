@@ -19,7 +19,7 @@ export const navItems = [
   { name: "Services", link: "#services" },
   { name: "Testimonials", link: "#testimonials" },
   { name: "Why Choose", link: "#whychoose" },
-  { name: "Approach", link: "#approach" },
+  { name: "Strategy", link: "#approach" },
   { name: "Contact", link: "#contact" },
 ];
 

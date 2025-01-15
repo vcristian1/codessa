@@ -64,7 +64,7 @@ const Hero = () => {
 
           <p className="text-center md:tracking-wider mb-4 xxs:text-lg xs:text-sm itp:text-lg xr:text-lg text-sm md:text-lg lg:text-1xl">
           We craft custom websites that elevate your brand and grow your business—without the stress. With personalized web development and seamless, hands-off management, we give you the tools to succeed online while you focus on what matters most.</p>
-          <a href="#about">
+          <a href="#projects">
             <MagicButton
               title="View our Portfolio"
               icon={<LiaFolder />}

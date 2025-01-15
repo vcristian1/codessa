@@ -17,7 +17,7 @@ const Approach = () => {
         }}
       >
         <h1 className="heading text-[#5e17eb]">
-          Strategies <span className="text-black-100 dark:text-white">That Drive Results</span>
+          Agile Strategies <span className="text-black-100 dark:text-white">That Drive Results</span>
         </h1>
       </motion.div>
       

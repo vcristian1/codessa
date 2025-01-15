@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
+import { navItems } from "@/data";
 import { Raleway } from "next/font/google";
 import React from "react";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
+import Footer from "@/components/Footer";
+import { FloatingNav } from "@/components/ui/FloatingNavbar";
+
+
 
 const raleway = Raleway({ subsets: ["latin"] });
 
