@@ -18,7 +18,7 @@ import AnimatedCursor from "react-animated-cursor"
 const Home = () => {
 
   return (
-    <main className="relative dark:bg-black-100 bg-slate-200 flex justify-center items-center flex-col overflow-clip mx-auto sm:px-10 px-5">
+    <main className="scrollbar scrollbar-thumb-sky-700 scrollbar-track-sky-300 relative dark:bg-black-100 bg-slate-200 flex justify-center items-center flex-col overflow-clip mx-auto sm:px-10 px-5">
       <div className="block xxs:hidden">
         <AnimatedCursor
             innerSize={14}
