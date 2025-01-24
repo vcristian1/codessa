@@ -67,8 +67,8 @@ const Footer = () => {
                 },
               })}
             />
-            {errors.name && (
-              <p className="mt-1 text-primary-500">{errors.name.message}</p>
+            {errors.name?.message && (
+              <p className="mt-1 text-primary-500">{String(errors.name.message)}</p>
             )}
 
             <input
@@ -83,8 +83,8 @@ const Footer = () => {
                 },
               })}
             />
-            {errors.email && (
-              <p className="mt-1 text-primary-500">{errors.email.message}</p>
+            {errors.email?.message && (
+              <p className="mt-1 text-primary-500">{String(errors.email.message)}</p>
             )}
 
             <input
@@ -95,8 +95,8 @@ const Footer = () => {
                 required: "This field is required.",
               })}
             />
-            {errors.phone && (
-              <p className="mt-1 text-primary-500">{errors.phone.message}</p>
+            {errors.phone?.message && (
+              <p className="mt-1 text-primary-500">{String(errors.phone.message)}</p>
             )}
 
             <textarea
@@ -112,8 +112,8 @@ const Footer = () => {
                 },
               })}
             />
-            {errors.message && (
-              <p className="mt-1 text-primary-500">{errors.message.message}</p>
+            {errors.message?.message && (
+              <p className="mt-1 text-primary-500">{String(errors.message.message)}</p>
             )}
             <input
               className={inputStyles}
